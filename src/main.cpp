@@ -28,3 +28,12 @@ void setup() {
     pinMode(ldrpin, INPUT);
     Serial.println("LDR setup");
 }
+/**
+ * @brief Continuously reads light intensity.
+ *
+ * Steps:
+ * 1. Reads analog value from LDR (0–1023)
+ * 2. Converts value into percentage (0–100%)
+ * 3. Prints raw value and percentage to Serial Monitor
+ * 4. Waits 500 milliseconds before next reading
+ */
